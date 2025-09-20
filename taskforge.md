@@ -7,12 +7,12 @@ A production‑leaning, cloud‑native task app you can run locally via Docker o
 
 * **Frontend**: React + Vite (TypeScript)
 * **APIs**: Rust (Axum 0.7) — gateway + auth + task service
-* **DB**: Postgres + `sqlx` (async, compile‑time checked queries)
+* **DB**: Postgres + sqlx (async, compile‑time checked queries)
 * **Cache/Queue**: Redis (rate‑limit, sessions, notifications queue)
 * **Obs**: tracing + Prometheus metrics
 * **Cloud**: K8s manifests + Helm chart, GitHub Actions CI/CD to GHCR
 
-**Repo: `taskforge` under `github.com/JatoriJenkinsSE/taskforge`
+**Repo: taskforge under github.com/JatoriJenkinsSE/taskforge
 
 ---
 
@@ -29,7 +29,7 @@ A production‑leaning, cloud‑native task app you can run locally via Docker o
 │  ├─ Chart.yaml
 │  ├─ values.yaml
 │  └─ templates/*.yaml
-├─ k8s/                       # Raw manifests (optional)
+├─ k8s/                       # Raw manifests 
 │  ├─ namespace.yaml
 │  ├─ postgres.yaml
 │  ├─ redis.yaml
@@ -627,7 +627,7 @@ jobs:
 
 ---
 
-## Quickstart (tailored for **@JatoriJenkinsSE**)
+## Quickstart
 
 ```bash
 # 1) Repo init
